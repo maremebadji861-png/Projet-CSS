@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activités - CSS - Compagnie Sucrière Sénégalaise</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/activites.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<base target="_blank">
+</head>
+<body>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-right">
+                <span class="top-phone">Une question ? <strong>(+221) 33 938 23 23</strong></span>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo-css.png" alt="CSS Logo">
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="presentation.html">
+                            À propos de nous
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="presentation.html">Présentation</a></li>
+                            <li><a href="implantation.html">Implantation</a></li>
+                            <li><a href="historique.html">Historique</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="activites.html" class="active">
+                            Activités
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="activites.html" class="active">Plantation de canne à sucre</a></li>
+                            <li><a href="activites.html">Production du sucre</a></li>
+                            <li><a href="activites.html">Production d'énergie</a></li>
+                            <li><a href="activites.html">Production d'éthanol</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="produits.html">
+                            Produits
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="produits.html">Sunu suker blanc</a></li>
+                            <li><a href="produits.html">Souki blanc</a></li>
+                            <li><a href="produits.html">Suker roux</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="activites.html">Développement durable & RSE</a></li>
+                    <li class="dropdown">
+                        <a href="#">
+                            Presse et web
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Actualités</a></li>
+                            <li><a href="#">Témoignages</a></li>
+                            <li><a href="#">Vidéothèque</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">
+                            Travailler à la CSS
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Offres d'emplois</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <div class="search-bar">
+        <div class="container">
+            <div class="search-wrapper">
+                <input type="text" placeholder="Rechercher...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         HERO SPLIT - Bleu motif canne + Image activité
+         ======================================== -->
+    <section class="activites-hero">
+        <div class="activites-hero-left">
+            <div class="activites-hero-bg"></div>
+        </div>
+        <div class="activites-hero-right">
+            <img src="../assets/plantation-hero.jpg" alt="Plantation de canne à sucre CSS">
+        </div>
+    </section>
+
+    <!-- ========================================
+         TITRE PRINCIPAL
+         ======================================== -->
+    <section class="activites-title">
+        <div class="container">
+            <h1>PLANTATION DE CANNE À SUCRE</h1>
+            <div class="title-separator"></div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 1 - Production de la canne
+         ======================================== -->
+    <section class="activite-section section-blanche">
+        <div class="container">
+            <div class="activite-content">
+                <div class="activite-text">
+                    <h2>1. Production de la canne à sucre à Richard-Toll</h2>
+                    <div class="text-border-left">
+                        <p>La <strong>production de la canne à sucre</strong> dans le complexe sucrier de Richard Toll a commencé en 1970. Le domaine agricole couvre une superficie de <strong>12 000 ha</strong>.</p>
+                        <p>La surface sous canne emblavée représente 7700 ha de cannes en irrigation gravitaire et 3000 ha en goutte à goutte.</p>
+                        <p>L'irrigation goutte à goutte est localisée sur des sols sableux du domaine alors que l'irrigation gravitaire est pratiquée sur les sols argileux.</p>
+                        <p>Les fermes agricoles assurent la conduite générale des activités culturales, de contrôle des adventices, de fertilisation, d'irrigation et de drainage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 2 - Aménagement des terres (JAUNE)
+         ======================================== -->
+    <section class="activite-section section-jaune">
+        <div class="container">
+            <div class="activite-content">
+                <div class="activite-text">
+                    <h2>2. Aménagement des terres agricoles et entretien des infrastructures hydro-agricoles</h2>
+                    <p>Chaque année, ce sont plus de 2000 ha de terres qui sont labourés et mise en culture.</p>
+                    <p>Les différentes opérations :</p>
+                    <ul class="activite-list">
+                        <li>la préparation des sols (labour)</li>
+                        <li>la construction et la réfection des pistes latéritiques</li>
+                        <li>le curage des canaux d'irrigation et des drains</li>
+                        <li>la construction des ouvrages de génie rural</li>
+                        <li>la fabrication des vannes à glissière et à crémaillère</li>
+                        <li>les relevés et mesures topographiques</li>
+                        <li>la réalisation des cartes topographiques et des plans projet</li>
+                    </ul>
+                    <p>Maîtrise des technologies de précision telles que le nivellement au laser et l'autoguidage des engins au GPS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 3 - Gestion exploitation (BLANCHE)
+         ======================================== -->
+    <section class="activite-section section-blanche">
+        <div class="container">
+            <div class="activite-content">
+                <div class="activite-text">
+                    <h2>3. La Gestion de l'exploitation agricole</h2>
+                    <p>Les activités d'exploitation agricole de la CSS :</p>
+                    <ul class="activite-list">
+                        <li>La plantation des parcelles</li>
+                        <li>L'entretien des cultures</li>
+                        <li>La récolte et le transport canne</li>
+                    </ul>
+                    <p>La récolte de la canne à sucre à la CSS est soit manuelle (48%) ou mécanique (52%) et se fait dans la période de Novembre à Mai. La coupe manuelle et la plantation de la canne sont effectuées par une main d'œuvre saisonnière.</p>
+                    <p>La mécanisation agricole est effectuée sur toutes les parcelles de canne de la CSS. Elle concerne les différentes opérations d'épandage (écumes, composts, chaux, cendre, vinasse, engrais), de griffage, de reprofilage, de pose gaine, de recouvrement mécanisé de la canne.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 4 - Recherche Agronomique (BLANCHE)
+         ======================================== -->
+    <section class="activite-section section-blanche">
+        <div class="container">
+            <div class="activite-content">
+                <div class="activite-text">
+                    <h2>4. La Recherche Agronomique</h2>
+                    <div class="text-border-left">
+                        <p>La Recherche Agronomique intervient sur différentes thématiques :</p>
+                        <ul class="activite-list">
+                            <li>le développement de variétés plus productives par l'amélioration génétique,</li>
+                            <li>la science et la fertilité des sols,</li>
+                            <li>la nutrition minérale de la canne,</li>
+                            <li>la défense des cultures et les sciences végétales,</li>
+                            <li>l'étude et la connaissance du milieu,</li>
+                            <li>les statistiques agricoles.</li>
+                        </ul>
+                        <p>Le département est équipé d'un nouveau laboratoire moderne qui ambitionne de se positionner comme un levier de référence pour accompagner le développement agricole du Sénégal et de la sous-région.</p>
+                        <p>Le domaine agricole de la CSS accueille des étudiants et apprenants des différentes universités et institutions de formation à travers tout le Sénégal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 5 - Projets d'extension (BLANCHE)
+         ======================================== -->
+    <section class="activite-section section-blanche">
+        <div class="container">
+            <div class="activite-content">
+                <div class="activite-text">
+                    <h2>5. Les projets d'extension</h2>
+                    <ol class="activite-list numbered">
+                        <li>Mise en valeur des terres salées du domaine par lessivage</li>
+                        <li>Amélioration de la gestion de l'irrigation gravitaire par l'utilisation du tuyau souple (Polynet)</li>
+                        <li>Valorisation des sous-produits de la canne par l'implantation d'une unité de compostage</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION CARTES IRRIGATION (JAUNE)
+         ======================================== -->
+    <section class="activite-section section-jaune">
+        <div class="container">
+            <div class="irrigation-cards">
+                <div class="irrigation-card">
+                    <h3>Irrigation Goutte à goutte</h3>
+                    <ul>
+                        <li>16 000 m³/h de capacité de pompage sur la Taouey</li>
+                        <li>1 réservoir de 110 000 m³ alimenté par 2 GRP (polyester avec renfort en fibres de verre) de 1100 mm</li>
+                        <li>1 réservoir de 40 000 m³ alimenté par 2 GRP de 800 mm</li>
+                        <li>12 stations d'irrigation avec 48 pompes</li>
+                        <li>Automatisation de l'irrigation et de la fertigation</li>
+                    </ul>
+                </div>
+                <div class="irrigation-card">
+                    <h3>Irrigation Gravitaire</h3>
+                    <ul>
+                        <li>Trois (03) stations de pompage</li>
+                        <li>10 stations de drainage</li>
+                        <li>07 bassins réservoirs</li>
+                        <li>Plus de 500 km de canaux d'irrigation</li>
+                        <li>Plus de 400 km de réseau de drainage à ciel ouvert</li>
+                    </ul>
+                </div>
+                <div class="irrigation-card">
+                    <h3>Nouvelles pratiques</h3>
+                    <ul>
+                        <li>Généralisation du double rang en irrigation goutte à goutte</li>
+                        <li>Gestion de la flotte du parc matériel par suivi GPS</li>
+                        <li>Développement de l'irrigation gravitaire par tuyau souple (Polynet)</li>
+                        <li>Maturation chimique et inhibiteur de floraison</li>
+                        <li>Agriculture de précision : compostage, sciences digitales, coupe en vert</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="../assets/logo-css-footer.png" alt="CSS">
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-links">
+                    <a href="#">Mentions légales</a> | <a href="#">Contact</a>
+                </div>
+                <div class="footer-credit">
+                    Site réalisé par <strong>incomm</strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="../script.js"></script>
+    <script src="../activites.js"></script>
+</body>
+</html>

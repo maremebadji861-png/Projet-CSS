@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implantation - CSS - Compagnie Sucrière Sénégalaise</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/implantation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<base target="_blank">
+</head>
+<body>
+    <!-- ========================================
+         TOP BAR
+         ======================================== -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-right">
+                <span class="top-phone">Une question ? <strong>(+221) 33 938 23 23</strong></span>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         HEADER / NAVIGATION
+         ======================================== -->
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo-css.png" alt="CSS Logo">
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="presentation.html" class="active">
+                            À propos de nous
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="presentation.html">Présentation</a></li>
+                            <li><a href="implantation.html" class="active">Implantation</a></li>
+                            <li><a href="historique.html">Historique</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="activites.html">
+                            Activités
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="activites.html">Plantation de canne à sucre</a></li>
+                            <li><a href="activites.html">Production du sucre</a></li>
+                            <li><a href="activites.html">Production d'énergie</a></li>
+                            <li><a href="activites.html">Production d'éthanol</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="produits.html">
+                            Produits
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="produits.html">Sunu suker blanc</a></li>
+                            <li><a href="produits.html">Souki blanc</a></li>
+                            <li><a href="produits.html">Suker roux</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="activites.html">Développement durable & RSE</a></li>
+                    <li class="dropdown">
+                        <a href="#">
+                            Presse et web
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Actualités</a></li>
+                            <li><a href="#">Témoignages</a></li>
+                            <li><a href="#">Vidéothèque</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">
+                            Travailler à la CSS
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Offres d'emplois</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- ========================================
+         SEARCH BAR
+         ======================================== -->
+    <div class="search-bar">
+        <div class="container">
+            <div class="search-wrapper">
+                <input type="text" placeholder="Rechercher...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         HERO SPLIT - Comme css.sn/implantation/
+         Gauche: fond bleu avec motif canne
+         Droite: image usine aérienne
+         ======================================== -->
+    <section class="implantation-hero">
+        <div class="implantation-hero-left">
+            <div class="implantation-hero-bg"></div>
+        </div>
+        <div class="implantation-hero-right">
+            <img src="../assets/usine-vue.jpg" alt="Usine CSS Richard Toll">
+        </div>
+    </section>
+
+    <!-- ========================================
+         TITRE PRINCIPAL - Sous le hero, fond blanc
+         ======================================== -->
+    <section class="implantation-title">
+        <div class="container">
+            <h1>IMPLANTATION</h1>
+            <div class="title-separator"></div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION JAUNE - Usine CSS
+         Texte à gauche, image à droite
+         ======================================== -->
+    <section class="usine-section">
+        <div class="container">
+            <div class="usine-content">
+                <div class="usine-text">
+                    <h2>Usine CSS</h2>
+                    <p>La Compagnie Sucrière Sénégalaise c'est plus de 50 ans d'activités dans la production de sucre raffiné 100% canne au Sénégal.</p>
+                    <p>Elle s'étend sur un foncier de plus de <strong>12 000 ha</strong> dans la vallée du fleuve Sénégal.</p>
+                </div>
+                <div class="usine-image">
+                    <img src="../assets/usine2-vue.jpg" alt="Usine CSS">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION BLANCHE - Les Casiers Agricoles
+         Texte à gauche, carte à droite
+         ======================================== -->
+    <section class="casiers-section">
+        <div class="container">
+            <div class="casiers-content">
+                <div class="casiers-text">
+                    <h2>Les Casiers Agricoles</h2>
+                    <p>Deux systèmes d'irrigation sont pratiqués à la CSS : l'irrigation gravitaire sur <strong>7 660 ha</strong> et l'irrigation goutte à goutte sur <strong>3 000 hectares</strong>.</p>
+                    <p>La production agricole en 2022 a dépassé le cap de <strong>1 425 000 tonnes de canne</strong>.</p>
+                </div>
+                <div class="casiers-image">
+                    <img src="../assets/Casiers_Agricoles.jpg" alt="Carte des casiers agricoles CSS">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="../assets/logo-css-footer.png" alt="CSS">
+                
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-links">
+                    <a href="#">Mentions légales</a> | <a href="#">Contact</a>
+                </div>
+                <div class="footer-credit">
+                    Site réalisé par <strong>incomm</strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="../script.js"></script>
+</body>
+</html>

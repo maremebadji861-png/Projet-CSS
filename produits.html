@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits - CSS - Compagnie Sucrière Sénégalaise</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/produits.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<base target="_blank">
+</head>
+<body>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-right">
+                <span class="top-phone">Une question ? <strong>(+221) 33 938 23 23</strong></span>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo-css.png" alt="CSS Logo">
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="presentation.html">
+                            À propos de nous
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="presentation.html">Présentation</a></li>
+                            <li><a href="implantation.html">Implantation</a></li>
+                            <li><a href="historique.html">Historique</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="activites.html">
+                            Activités
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="activites.html">Plantation de canne à sucre</a></li>
+                            <li><a href="activites.html">Production du sucre</a></li>
+                            <li><a href="activites.html">Production d'énergie</a></li>
+                            <li><a href="activites.html">Production d'éthanol</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="produits.html" class="active">
+                            Produits
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="produits.html" class="active">Sunu suker blanc</a></li>
+                            <li><a href="produits.html">Souki blanc</a></li>
+                            <li><a href="produits.html">Suker roux</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="activites.html">Développement durable & RSE</a></li>
+                    <li class="dropdown">
+                        <a href="#">
+                            Presse et web
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Actualités</a></li>
+                            <li><a href="#">Témoignages</a></li>
+                            <li><a href="#">Vidéothèque</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">
+                            Travailler à la CSS
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Offres d'emplois</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <div class="search-bar">
+        <div class="container">
+            <div class="search-wrapper">
+                <input type="text" placeholder="Rechercher...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         HERO SPLIT - Bleu motif canne + Image produits
+         ======================================== -->
+    <section class="produits-hero">
+        <div class="produits-hero-left">
+            <div class="produits-hero-bg"></div>
+        </div>
+        <div class="produits-hero-right">
+            <img src="../assets/produits-hero.jpg" alt="Produits CSS - Sunu Suker">
+        </div>
+    </section>
+
+    <!-- ========================================
+         TITRE PRINCIPAL - Sur fond blanc
+         ======================================== -->
+    <section class="produits-title">
+        <div class="container">
+            <h1>SUNU SUKER BLANC</h1>
+            <div class="title-separator"></div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FILTRES & TRI
+         ======================================== -->
+    <section class="produits-filters">
+        <div class="container">
+            <div class="filters-row">
+                <span class="results-count">5 résultats affichés</span>
+                <div class="sort-dropdown">
+                    <select>
+                        <option value="default">Tri par défaut</option>
+                        <option value="price-asc">Prix croissant</option>
+                        <option value="price-desc">Prix décroissant</option>
+                        <option value="name-asc">Nom A-Z</option>
+                        <option value="name-desc">Nom Z-A</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         GRILLE DE PRODUITS - 4 colonnes
+         ======================================== -->
+    <section class="produits-grid-section">
+        <div class="container">
+            <div class="produits-grid">
+                <!-- Produit 1 -->
+                <div class="produit-card">
+                    <div class="produit-img-wrapper">
+                        <img src="../assets/produit-sunu-250g.jpg" alt="SUNU SUKËR BLANC SACHET 250">
+                    </div>
+                    <h4>SUNU SUKËR BLANC SACHET 250</h4>
+                </div>
+                <!-- Produit 2 -->
+                <div class="produit-card">
+                    <div class="produit-img-wrapper">
+                        <img src="../assets/produit-sunu-1kg.jpg" alt="SUNU SUKËR BLANC SACHET 1">
+                    </div>
+                    <h4>SUNU SUKËR BLANC SACHET 1</h4>
+                </div>
+                <!-- Produit 3 -->
+                <div class="produit-card">
+                    <div class="produit-img-wrapper">
+                        <img src="../assets/produit-sunu-5kg.jpg" alt="SUNU SUKËR BLANC SACHET 5">
+                    </div>
+                    <h4>SUNU SUKËR BLANC SACHET 5</h4>
+                </div>
+                <!-- Produit 4 -->
+                <div class="produit-card">
+                    <div class="produit-img-wrapper">
+                        <img src="../assets/produit-sunu-sticks.jpg" alt="SUNU SUKËR BLANC STICKS">
+                    </div>
+                    <h4>SUNU SUKËR BLANC STICKS</h4>
+                </div>
+                <!-- Produit 5 -->
+                <div class="produit-card">
+                    <div class="produit-img-wrapper">
+                        <img src="../assets/produit-sunu-50x5g.jpg" alt="SUNU SUKËR BLANC SACHET 50x5G">
+                    </div>
+                    <h4>SUNU SUKËR BLANC SACHET 50x5G</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         NAVIGATION GAMMES - Pagination
+         ======================================== -->
+    <section class="gammes-nav">
+        <div class="container">
+            <div class="gammes-row">
+                <a href="produits.html" class="gamme-card active">
+                    <div class="gamme-img">
+                        <img src="../assets/gamme-sunu-blanc.jpg" alt="Sunu Suker Blanc">
+                    </div>
+                    <span class="gamme-name">SUNU SUKER BLANC</span>
+                </a>
+                <a href="produits.html" class="gamme-card">
+                    <div class="gamme-img">
+                        <img src="../assets/gamme-souki-blanc.jpg" alt="Souki Blanc">
+                    </div>
+                    <span class="gamme-name">SOUKI BLANC</span>
+                </a>
+                <a href="produits.html" class="gamme-card">
+                    <div class="gamme-img">
+                        <img src="../assets/gamme-suker-roux.jpg" alt="Suker Roux">
+                    </div>
+                    <span class="gamme-name">SUKER ROUX</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="../assets/logo-css-footer.png" alt="CSS">
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-links">
+                    <a href="#">Mentions légales</a> | <a href="#">Contact</a>
+                </div>
+                <div class="footer-credit">
+                    Site réalisé par <strong>incomm</strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="../script.js"></script>
+</body>
+</html>
