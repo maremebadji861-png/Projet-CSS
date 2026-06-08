@@ -1,0 +1,278 @@
+/* ========================================
+   PAGE PRÉSENTATION - STYLES SPÉCIFIQUES
+   Inspiré de css.sn/presentation/
+   ======================================== */
+
+/* ========================================
+   HERO IMAGE - Image usine pleine largeur
+   Comme css.sn/presentation/
+   ======================================== */
+.presentation-hero {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    display: block;
+}
+
+.presentation-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ========================================
+   TITRE PRÉSENTATION - Sous l'image
+   ======================================== */
+.presentation-title {
+    padding: 50px 0 15px;
+    text-align: center;
+    background: var(--white);
+}
+
+.presentation-title .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.presentation-title h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--blue-primary);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.title-separator {
+    width: 80px;
+    height: 3px;
+    background: var(--blue-primary);
+    margin: 20px auto 0;
+    opacity: 0.3;
+}
+
+/* ========================================
+   SECTION JAUNE - Des Hommes, du sucre
+   ======================================== */
+.presentation-yellow {
+    background: var(--yellow-primary);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.presentation-yellow .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.presentation-yellow h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.presentation-yellow p {
+    font-size: 15px;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.presentation-yellow p:last-child {
+    margin-bottom: 0;
+}
+
+.presentation-yellow strong {
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+/* ========================================
+   DEUX CARTES BLANCHES
+   ======================================== */
+.presentation-cards {
+    background: var(--white);
+    padding: 50px 0;
+}
+
+.presentation-cards .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.info-card {
+    background: var(--white);
+    border: 1px solid #ddd;
+    padding: 30px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+.info-card p {
+    margin-bottom: 15px;
+}
+
+.info-card p:first-child {
+    margin-bottom: 15px;
+}
+
+.info-card ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.info-card ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.info-card ul li:last-child {
+    margin-bottom: 0;
+}
+
+.info-card strong {
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.info-card a {
+    color: var(--text-dark);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.info-card a:hover {
+    color: var(--blue-primary);
+}
+
+/* ========================================
+   CSS EN CHIFFRES - Page présentation
+   ======================================== */
+.presentation-chiffres {
+    padding: 100px 0 60px;
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.presentation-chiffres .chiffres-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/sucre-cubes-bg.jpg') center center no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.presentation-chiffres .chiffres-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.3) 0%,
+        rgba(255,255,255,0.1) 50%,
+        rgba(255,255,255,0.3) 100%
+    );
+    z-index: 1;
+}
+
+.presentation-chiffres .container {
+    position: relative;
+    z-index: 2;
+}
+
+.presentation-chiffres .section-title {
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 1024px) {
+    .presentation-hero {
+        height: 280px;
+    }
+
+    .presentation-title h1 {
+        font-size: 36px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .presentation-yellow h2 {
+        font-size: 26px;
+    }
+
+    .presentation-chiffres .chiffres-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .presentation-hero {
+        height: 200px;
+    }
+
+    .presentation-title h1 {
+        font-size: 28px;
+    }
+
+    .presentation-yellow {
+        padding: 35px 0;
+    }
+
+    .presentation-yellow h2 {
+        font-size: 22px;
+    }
+
+    .presentation-yellow p {
+        font-size: 14px;
+    }
+
+    .presentation-cards {
+        padding: 30px 0;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+    .presentation-chiffres .chiffres-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .presentation-chiffres .section-title {
+        text-align: center;
+        font-size: 32px;
+    }
+}

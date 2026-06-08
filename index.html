@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Compagnie Sucrière Sénégalaise</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- TOP BAR - FOND BLANC -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-right">
+                <span class="top-phone">Une question ? <strong>(+221) 33 938 23 23</strong></span>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-css.png" alt="CSS Logo">
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+
+                    <li class="dropdown">
+                        <a href="pages/implantation.html">
+                            À propos de nous
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/presentation.html">Présentation</a></li>
+                            <li><a href="pages/implantation.html">Implantation</a></li>
+                            <li><a href="pages/historique.html">Historique</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="pages/activites.html">
+                            Activités
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/activites.html">Plantation de canne à sucre</a></li>
+                            <li><a href="pages/activites.html">Production du sucre</a></li>
+                            <li><a href="pages/activites.html">Production d'énergie</a></li>
+                            <li><a href="pages/activites.html">Production d'éthanol</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="pages/produits.html">
+                            Produits
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/produits.html">Sunu suker blanc</a></li>
+                            <li><a href="pages/produits.html">Souki blanc</a></li>
+                            <li><a href="pages/produits.html">Suker roux</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="pages/activites.html">Développement durable & RSE</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">
+                            Presse et web
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Actualités</a></li>
+                            <li><a href="#">Témoignages</a></li>
+                            <li><a href="#">Vidéothèque</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">
+                            Travailler à la CSS
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Offres d'emplois</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <div class="search-bar">
+        <div class="container">
+            <div class="search-wrapper">
+                <input type="text" placeholder="Rechercher...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SLIDER -->
+    <section class="hero-slider" id="accueil">
+        <div class="slide active" data-slide="0">
+            <div class="slide-bg">
+                <img src="assets/slide1.jpg" alt="Production du sucre">
+            </div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h1>PRODUCTION<br>DU SUCRE</h1>
+                    <p>Notre Usine de production de sucre est très avancée technologiquement par rapport à la plupart des autres sociétés sucrières...</p>
+                    <a href="#" class="btn-outline">EN SAVOIR PLUS</a>
+                </div>
+            </div>
+            <div class="slide-decor">
+                <img src="assets/canne-dessin.png" class="canne-left" alt="">
+                <img src="assets/canne-dessin2.png" class="canne-right" alt="">
+            </div>
+        </div>
+        <div class="slide" data-slide="1">
+            <div class="slide-bg">
+                <img src="assets/slide4.jpg" alt="Production d'éthanol">
+            </div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h1>PRODUCTION<br>D'ÉTHANOL</h1>
+                    <p>Le procédé de fabrication de sucre à partir de la canne génère après la troisième étape de la cristallisation un sous-produit appelé mélasse contenant environ 35 – 40% de sucre.</p>
+                    <a href="#" class="btn-outline">EN SAVOIR PLUS</a>
+                </div>
+            </div>
+            <div class="slide-decor">
+                <img src="assets/canne-dessin.png" class="canne-left" alt="">
+                <img src="assets/canne-dessin2.png" class="canne-right" alt="">
+            </div>
+        </div>
+        <div class="slide" data-slide="2">
+            <div class="slide-bg">
+                <img src="assets/slide2.jpg" alt="Production d'énergie">
+            </div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h1>PRODUCTION<br>D'ÉNERGIE</h1>
+                    <p>La mission du département Énergie est d'assurer la production stable et continue d'énergie électrique (à partir de turbines à vapeur et de groupes électrogènes) et vapeur (chaudières industrielles) pour l'ensemble des besoins de la CSS.</p>
+                    <a href="#" class="btn-outline">EN SAVOIR PLUS</a>
+                </div>
+            </div>
+            <div class="slide-decor">
+                <img src="assets/canne-dessin.png" class="canne-left" alt="">
+                <img src="assets/canne-dessin2.png" class="canne-right" alt="">
+            </div>
+        </div>
+        <div class="slide" data-slide="3">
+            <div class="slide-bg">
+                <img src="assets/slide3.jpg" alt="Plantation de canne">
+            </div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h1>PLANTATION<br>DE CANNE</h1>
+                    <p>La CSS s'étend sur plus de 12 000 hectares dans la vallée du fleuve Sénégal, aux portes de la ville de Richard-Toll.</p>
+                    <a href="#" class="btn-outline">EN SAVOIR PLUS</a>
+                </div>
+            </div>
+            <div class="slide-decor">
+                <img src="assets/canne-dessin.png" class="canne-left" alt="">
+                <img src="assets/canne-dessin2.png" class="canne-right" alt="">
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev"><i class="fas fa-arrow-left"></i></button>
+            <button class="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <!-- À PROPOS - CORRIGÉ: z-index pour éviter le débordement -->
+    <section class="apropos" id="apropos">
+        <div class="apropos-row">
+            <div class="apropos-left">
+                <div class="apropos-left-bg"></div>
+                <div class="circle-image-wrapper">
+                    <div class="circle-image">
+                        <img src="assets/vue-aerienne.png" alt="Vue aérienne CSS">
+                    </div>
+                </div>
+            </div>
+            <div class="apropos-right">
+                <div class="apropos-text">
+                    <h2>À PROPOS DE NOUS</h2>
+                    <p>La Compagnie Sucrière Sénégalaise (CSS) s'étend sur plus de 12 000 ha dans la vallée du fleuve Sénégal aux portes de la ville de Richard-Toll. Le complexe agro-industriel de la CSS, unique au Sénégal, permet de réaliser l'ensemble des opérations de transformation de la canne, en sucre raffiné.</p>
+                    <a href="pages/implantation.html" class="btn-outline white">EN SAVOIR PLUS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSS EN CHIFFRES - CORRIGÉ: 2 éléments séparés pour le fond -->
+    <section class="chiffres" id="activites">
+        <div class="chiffres-bg-img"></div>
+        <div class="chiffres-bg-overlay"></div>
+        <div class="container">
+            <h2 class="section-title">CSS EN CHIFFRES</h2>
+            <div class="chiffres-grid">
+                <div class="chiffre-item">
+                    <div class="chiffre-icon"><img src="assets/icon-50ans.png" alt=""></div>
+                    <h3 data-target="53" data-suffix=" ans">0</h3>
+                    <p>de la culture de la canne à sucre</p>
+                </div>
+                <div class="chiffre-item">
+                    <div class="chiffre-icon"><img src="assets/icon-champ.png" alt=""></div>
+                    <h3 data-target="12000" data-suffix=" ha">0</h3>
+                    <p>de surface agricole utiles</p>
+                </div>
+                <div class="chiffre-item">
+                    <div class="chiffre-icon"><img src="assets/icon-canne.png" alt=""></div>
+                    <h3 data-target="1500000" data-suffix=" T">0</h3>
+                    <p>de canne produites par an</p>
+                </div>
+                <div class="chiffre-item">
+                    <div class="chiffre-icon"><img src="assets/icon-sucre.png" alt=""></div>
+                    <h3 data-target="145000" data-suffix=" T">0</h3>
+                    <p>de sucre produits par an</p>
+                </div>
+                <div class="chiffre-item">
+                    <div class="chiffre-icon"><img src="assets/icon-alcool.png" alt=""></div>
+                    <h3 data-target="13000000" data-suffix=" L">0</h3>
+                    <p>d'Alcool pur produits par an</p>
+                </div>
+                <div class="chiffre-item">
+                    <div class="chiffre-icon"><img src="assets/icon-1er.png" alt=""></div>
+                    <h3 data-target="1" data-suffix=" er">0</h3>
+                    <p>employeur privé du Sénégal</p>
+                </div>
+                <div class="chiffre-item">
+                    <div class="chiffre-icon"><img src="assets/icon-emploi.png" alt=""></div>
+                    <h3 data-target="8000" data-suffix="">0</h3>
+                    <p>emplois</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTIVITÉS GRID -->
+    <section class="activites-grid" id="activites">
+        <div class="container">
+            <div class="grid-2x2">
+                <div class="activite-card">
+                    <img src="assets/plantation.jpg" alt="Plantation de canne">
+                    <div class="activite-overlay yellow">
+                        <h3>PLANTATION DE<br>CANNE À SUCRE</h3>
+                        <a href="pages/activites.html" class="btn-outline white">Découvrir</a>
+                    </div>
+                </div>
+                <div class="activite-card">
+                    <img src="assets/production.jpg" alt="Production du sucre">
+                    <div class="activite-overlay blue">
+                        <h3>PRODUCTION<br>DU SUCRE</h3>
+                        <a href="pages/activites.html" class="btn-outline white">Découvrir</a>
+                    </div>
+                </div>
+                <div class="activite-card">
+                    <img src="assets/energie.jpg" alt="Production d'énergie">
+                    <div class="activite-overlay">
+                        <h3>PRODUCTION<br>D'ÉNERGIE</h3>
+                        <a href="pages/activites.html" class="btn-outline white">Découvrir</a>
+                    </div>
+                </div>
+                <div class="activite-card">
+                    <img src="assets/ethanol.jpg" alt="Production d'éthanol">
+                    <div class="activite-overlay yellow">
+                        <h3>PRODUCTION<br>D'ÉTHANOL</h3>
+                        <a href="pages/activites.html" class="btn-outline white">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRATÉGIE ET INNOVATION -->
+    <section class="strategie">
+        <div class="container">
+            <h2 class="section-title blue">STRATÉGIE ET INNOVATION</h2>
+            <div class="separator"></div>
+            <p>Etant le <strong>premier employeur privé du pays</strong>, la CSS a recherché l'excellence à travers le développement du <strong>capital humain</strong> et l'investissement sur l'<strong>innovation technologique</strong>. Dans tous les secteurs de production, l'actionnaire n'a pas lésiné sur les moyens pour procurer les équipements et matériels issus des dernières innovations, ce qui lui vaut d'être parmi les premiers au monde en rendement à l'hectare de <a href="#">canne à sucre</a>.</p>
+        </div>
+    </section>
+
+    <!-- YELLOW BANNER -->
+      <!-- YELLOW BANNER - Largeur limitée comme activités -->
+    <div class="yellow-banner">
+        <div class="container">
+            <p>Le « laboratoire Aïcha Mimran » qui sera inauguré bientôt ambitionne de se positionner comme un laboratoire de référence pour accompagner la production agricole et le <strong>développement durable</strong> du Sénégal et dans une perspective plus large en Afrique de l'Ouest.</p>
+        </div>
+    </div>
+
+    <!-- MARGE BLANCHE DE SÉPARATION AVANT PRODUITS -->
+    <div class="white-separator"></div>
+
+    <!-- PRODUITS -->
+    <section class="produits" id="produits">
+        ...
+    </section>
+
+    <!-- PRODUITS -->
+    <section class="produits" id="produits">
+        <div class="container">
+            <h2 class="section-title dark">Produits</h2>
+            <p class="produits-desc">Redécouvrez nos saveurs « Souki », « Sunu Suker » et « Suker roux »<<br>qui vont ravir votre famille et vos invités.</p>
+            <div class="produits-grid">
+                <div class="produit-card">
+                    <div class="produit-img">
+                        <img src="assets/produit-morceaux.jpg" alt="Souki Blanc Morceaux">
+                    </div>
+                    <h4>SOUKI BLANC MORCEAUX 1 KG</h4>
+                </div>
+                <div class="produit-card">
+                    <div class="produit-img">
+                        <img src="assets/produit-sachet1kg.jpg" alt="Souki Blanc Sachet 1kg">
+                    </div>
+                    <h4>SOUKI BLANC SACHET 1 KG</h4>
+                </div>
+                <div class="produit-card">
+                    <div class="produit-img">
+                        <img src="assets/produit-sachet250g.jpg" alt="Souki Blanc Sachet 250g">
+                    </div>
+                    <h4>SOUKI BLANC SACHET 250 G</h4>
+                </div>
+                <div class="produit-card">
+                    <div class="produit-img">
+                        <img src="assets/produit-sachet5kg.jpg" alt="Souki Blanc Sachet 5kg">
+                    </div>
+                    <h4>SOUKI BLANC SACHET 5 KG</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAVAILLER À LA CSS -->
+    <section class="travailler" id="travailler">
+        <div class="travailler-bg">
+            <img src="assets/equipe.jpg" alt="Équipe CSS">
+        </div>
+        <div class="travailler-content">
+            <div class="travailler-circle">
+                <div class="circle-icon">
+                    <img src="assets/icon-canne-noir.png" alt="">
+                </div>
+                <h2>TRAVAILLER<br>À LA CSS</h2>
+                <a href="#" class="btn-white">NOUS REJOINDRE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <section class="contact-section" id="contact">
+        <div class="contact-grid">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31112.5!2d-15.7!3d16.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDI3JzAwLjAiTiAxNcKwNDInMDAuMCJX!5e0!3m2!1sfr!2ssn!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="cookie-notice">
+                    <p>Cliquez pour accepter les cookies marketing et activer ce contenu</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Téléphone</strong>
+                        <p>(+221) 33 938 23 23</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Adresse</strong>
+                        <p>49, Richard-Toll, SENEGAL</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>E-mail</strong>
+                        <p>info@css.sn</p>
+                    </div>
+                </div>
+                <div class="groupe-mimran">
+                    <img src="assets/groupe-mimran.png" alt="Groupe Mimran">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="assets/logo-css-footer.png" alt="CSS">
+               
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-links">
+                    <a href="#">Mentions légales</a> | <a href="#">Contact</a>
+                </div>
+                <div class="footer-credit">
+                    Site réalisé par <strong>incomm</strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

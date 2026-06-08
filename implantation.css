@@ -1,0 +1,325 @@
+/* ========================================
+   PAGE IMPLANTATION - STYLES SPÉCIFIQUES
+   Inspiré fidèlement du site css.sn/implantation/
+   ======================================== */
+
+/* ========================================
+   HERO SPLIT - Comme css.sn/implantation/
+   Gauche: fond bleu avec motif canne à sucre
+   Droite: image usine aérienne
+   ======================================== */
+.implantation-hero {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.implantation-hero-left {
+    flex: 1;
+    position: relative;
+    background: var(--blue-primary);
+    overflow: hidden;
+}
+
+/* Motif de canne à sucre en filigrane */
+.implantation-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cpath d='M50 180 Q60 120 50 80 Q40 40 60 20' stroke='rgba(255,255,255,0.08)' stroke-width='2' fill='none'/%3E%3Cpath d='M80 190 Q90 130 80 90 Q70 50 90 30' stroke='rgba(255,255,255,0.06)' stroke-width='2' fill='none'/%3E%3Cpath d='M110 185 Q120 125 110 85 Q100 45 120 25' stroke='rgba(255,255,255,0.08)' stroke-width='2' fill='none'/%3E%3Cpath d='M140 190 Q150 130 140 90 Q130 50 150 30' stroke='rgba(255,255,255,0.06)' stroke-width='2' fill='none'/%3E%3Cpath d='M30 170 Q40 110 30 70' stroke='rgba(255,255,255,0.05)' stroke-width='1.5' fill='none'/%3E%3Cpath d='M170 175 Q180 115 170 75' stroke='rgba(255,255,255,0.05)' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"),
+        linear-gradient(135deg, #00A8E8 0%, #0095CF 100%);
+    background-size: 180px 180px, cover;
+}
+
+/* Lignes de canne en CSS pur comme fallback */
+.implantation-hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        repeating-linear-gradient(
+            -30deg,
+            transparent,
+            transparent 40px,
+            rgba(255,255,255,0.04) 40px,
+            rgba(255,255,255,0.04) 42px
+        ),
+        repeating-linear-gradient(
+            30deg,
+            transparent,
+            transparent 60px,
+            rgba(255,255,255,0.03) 60px,
+            rgba(255,255,255,0.03) 62px
+        );
+}
+
+.implantation-hero-right {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.implantation-hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ========================================
+   TITRE PRINCIPAL - Sous le hero, fond blanc
+   ======================================== */
+.implantation-title {
+    padding: 50px 0 15px;
+    text-align: center;
+    background: var(--white);
+}
+
+.implantation-title .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.implantation-title h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--blue-primary);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.title-separator {
+    width: 80px;
+    height: 3px;
+    background: var(--blue-primary);
+    margin: 20px auto 0;
+    opacity: 0.3;
+}
+
+/* ========================================
+   SECTION JAUNE - Usine CSS
+   Texte à GAUCHE, image à DROITE
+   ======================================== */
+.usine-section {
+    background: var(--yellow-primary);
+    padding: 60px 0;
+}
+
+.usine-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.usine-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Texte à gauche */
+.usine-text {
+    text-align: center;
+    order: 1;
+}
+
+.usine-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+}
+
+.usine-text p {
+    font-size: 15px;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.usine-text p:last-child {
+    margin-bottom: 0;
+}
+
+.usine-text strong {
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+/* Image à droite */
+.usine-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+}
+
+.usine-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ========================================
+   SECTION BLANCHE - Les Casiers Agricoles
+   Texte à GAUCHE, image à DROITE
+   ======================================== */
+.casiers-section {
+    background: var(--white);
+    padding: 60px 0;
+}
+
+.casiers-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.casiers-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Texte à gauche */
+.casiers-text {
+    text-align: center;
+    order: 1;
+}
+
+.casiers-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+}
+
+.casiers-text p {
+    font-size: 15px;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.casiers-text p:last-child {
+    margin-bottom: 0;
+}
+
+.casiers-text strong {
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+/* Image à droite */
+.casiers-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+}
+
+.casiers-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid var(--yellow-primary);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+.usine-content,
+.casiers-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.usine-content.visible,
+.casiers-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 1024px) {
+    .implantation-hero {
+        height: 280px;
+    }
+
+    .implantation-title h1 {
+        font-size: 36px;
+    }
+
+    .usine-content,
+    .casiers-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* Sur mobile : texte en haut, image en bas */
+    .usine-text,
+    .casiers-text {
+        order: 1;
+    }
+
+    .usine-image,
+    .casiers-image {
+        order: 2;
+    }
+
+    .usine-text h2,
+    .casiers-text h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .implantation-hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .implantation-hero-left,
+    .implantation-hero-right {
+        flex: none;
+        width: 100%;
+        height: 200px;
+    }
+
+    .implantation-title h1 {
+        font-size: 28px;
+    }
+
+    .usine-section,
+    .casiers-section {
+        padding: 40px 0;
+    }
+
+    .usine-text h2,
+    .casiers-text h2 {
+        font-size: 24px;
+    }
+
+    .usine-text p,
+    .casiers-text p {
+        font-size: 14px;
+    }
+}
